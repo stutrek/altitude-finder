@@ -1,0 +1,59 @@
+html, body {
+	font-family: helvetica, sans-serif;
+}
+/*.altitude:before {
+	content: 'alt: ';
+}
+*/
+.latitude:before {
+	content: 'lat: ';
+}
+.longitude:before {
+	content: 'long: ';
+}
+.latitude:after, .longitude:after {
+	content: '\00b0 ';
+}
+.altitude .meters:after {
+	content:'m/';
+}
+.altitude .feet:after {
+	content:'ft';
+}
+#current {
+	position: relative;
+	margin: 20px 0;
+}
+
+#current .altitude {
+	font-size: 72px;
+	text-align: center;
+	display: block;
+}
+#current .altitude:before {
+	content: '';
+}
+#current .altitude span {
+	display: block;
+}
+#current .altitude .meters:after {
+	content:'m';
+}
+
+#history .measurement {
+	padding: 10px 0;
+	border-top: 1px solid silver;
+}
+button {
+	width: 100%;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.longitude {
+	float: right;
+}
+.altitude {
+	text-align: center;
+	font-size: 30px;
+}
